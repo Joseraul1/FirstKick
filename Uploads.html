@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Uploads.css">
+    <title>Uploads</title>
+</head>
+<body>
+    <h1>Subir Archivos y Abrir Cámara</h1>
+
+    <!-- Subir archivos -->
+    <input type="file" id="file-upload" accept="image/*,video/*,application/pdf" multiple>
+    <p>Selecciona archivos para subir</p>
+
+    <!-- Botón para abrir cámara -->
+    <button id="open-camera">Abrir Cámara</button>
+
+    <!-- Elemento de video para la cámara -->
+    <video id="video" autoplay></video>
+
+    <script>
+        // Acceder a la cámara
+        document.getElementById('open-camera').addEventListener('click', async () => {
+            try {
+                const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+                const video = document.getElementById('video');
+                video.srcObject = stream;
+            } catch (error) {
+                alert('No se pudo acceder a la cámara: ' + error);
+            }
+        });
+    </script>
+     <!-- Barra de navegacion -->
+     <div class="navbar2">
+        <a href="./Web.html">Home</a>
+        <a href="./Discover.html">Discover</a>
+        <a href="./Uploads.html">Uploads</a>
+        <a href="./Profile.html">Profile</a>
+        <a href="./Settings.html">Settings</a>
+        </div>
+</body>
+</html>

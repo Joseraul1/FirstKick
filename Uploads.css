@@ -1,0 +1,28 @@
+    body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #video {
+            margin-top: 20px;
+            width: 300px;
+            height: auto;
+        }
+        #file-upload, #open-camera {
+            margin: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        .navbar2 {
+            display: flex;
+            justify-content: space-around;
+            background-color: #32CD32;
+            padding: 15px;
+            font-family: Arial, sans-serif;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            color: white;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+        }
