@@ -1,115 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Settings</title>
-    <link rel="stylesheet" href="Home.css">
-    <!--<style>
-        .settings-container {
-            width: 350px;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            background-color: #ffffff;
-        }
-        .settings-container h1 {
-            text-align: center;
-            margin-bottom: 20px;
-            color: #333333;
-        }
-        .setting-option {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 12px;
-            border-bottom: 1px solid #e0e0e0;
-            cursor: pointer;
-        }
-        .setting-option:last-child {
-            border-bottom: none;
-        }
-        .setting-option:hover {
-            background-color: #f9f9f9;
-        }
-        .setting-option span {
-            font-size: 16px;
-            color: #555555;
-        }
-        .logout-btn {
-            display: block;
-            width: 100%;
-            margin-top: 20px;
-            padding: 12px;
-            text-align: center;
-            font-size: 16px;
-            color: #ffffff;
-            background-color: #ff4b4b;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        .logout-btn:hover {
-            background-color: #e04444;
-        }
-    </style> -->
+    <link rel="stylesheet" href="Settings.css"> <!-- Cambia el nombre del archivo CSS si es necesario -->
 </head>
 <body>
+    <!-- Barra de navegación -->
+    <div class="navbar">
+        <h1>FirstKick</h1>
+        <div class="navbar-links">
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar...">
+            </div>
+            <a href="./Web.html">Home</a>
+            <a href="./Discover.html">Discover</a>
+            <a href="./Uploads.html">Uploads</a>
+            <a href="./Profile.html">Profile</a>
+            <a href="./Settings.html">Settings</a>
+        </div>
+    </div>
+
     <div class="settings-container">
-        <h1>Settings</h1>
+        <h1>Configuración</h1>
         
         <div class="setting-option" onclick="privacySettings()">
-            <span>Privacy</span>
+            <span>Privacidad</span>
             <span>&#x25B6;</span>
         </div>
         
         <div class="setting-option" onclick="changePassword()">
-            <span>Change Password</span>
+            <span>Cambiar Contraseña</span>
             <span>&#x25B6;</span>
         </div>
         
         <div class="setting-option" onclick="notificationSettings()">
-            <span>Notifications</span>
+            <span>Notificaciones</span>
             <span>&#x25B6;</span>
         </div>
         
         <div class="setting-option" onclick="languageSettings()">
-            <span>Language</span>
+            <span>Idioma</span>
             <span>&#x25B6;</span>
         </div>
         
-        <button class="logout-btn" onclick="logout()">Log Out</button>
+        <button class="logout-btn" onclick="logout()">Cerrar Sesión</button>
     </div>
 
     <script>
         function privacySettings() {
-            alert('Redirecting to Privacy Settings...');
+            alert('Redirigiendo a Configuración de Privacidad...');
         }
 
         function changePassword() {
-            alert('Redirecting to Change Password...');
+            alert('Redirigiendo a Cambiar Contraseña...');
         }
 
         function notificationSettings() {
-            alert('Redirecting to Notification Settings...');
+            alert('Redirigiendo a Configuración de Notificaciones...');
         }
 
         function languageSettings() {
-            alert('Redirecting to Language Settings...');
+            alert('Redirigiendo a Configuración de Idioma...');
         }
 
         function logout() {
-            alert('Logging out...');
-            // Here you would typically add code to log out the user, such as clearing cookies or tokens.
+            alert('Cerrando sesión...');
+            // Aquí agregarías el código para cerrar sesión, como limpiar cookies o tokens.
         }
     </script>
-    <!-- Barra de navegacion -->
-    <div class="navbar2">
-    <a href="./Web.html">Home</a>
-    <a href="./Discover.html">Discover</a>
-    <a href="./Uploads.html">Uploads</a>
-    <a href="./Profile.html">Profile</a>
-    <a href="./Settings.html">Settings</a>
-    </div>
 </body>
 </html>

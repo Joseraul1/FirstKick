@@ -56,70 +56,60 @@ body {
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
-/* Contenedor principal */
-.container {
-    display: flex;
-    flex-direction: column;
-    max-width: 800px;
-    margin: 20px auto;
+/* Contenedor de configuración */
+.settings-container {
+    width: 400px;
     padding: 20px;
-    background-color: white;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    margin: 20px auto; /* Centrar el contenedor */
 }
 
-/* Estilos para la sección de subir archivos */
-.upload-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.upload-section input[type="file"] {
-    display: none; /* Ocultar el input file */
-}
-
-.upload-label {
-    padding: 10px 20px;
-    background-color: #32CD32;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+.settings-container h1 {
     text-align: center;
+    margin-bottom: 20px;
+    color: #333333;
 }
 
-.upload-label:hover {
-    background-color: #2eb82e;
-}
-
-/* Estilos para el botón de abrir cámara */
-.camera-button {
-    background-color: #32CD32;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
+.setting-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid #e0e0e0;
     cursor: pointer;
     transition: background-color 0.3s;
-    margin-bottom: 20px;
 }
 
-.camera-button:hover {
-    background-color: #2eb82e;
+.setting-option:last-child {
+    border-bottom: none;
 }
 
-/* Estilos para el video */
-.video-preview-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+.setting-option:hover {
+    background-color: #f9f9f9;
 }
 
-.video-preview {
+.setting-option span {
+    font-size: 16px;
+    color: #555555;
+}
+
+.logout-btn {
+    display: block;
     width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    padding: 12px;
+    text-align: center;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #ff4b4b;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+    background-color: #e04444;
 }

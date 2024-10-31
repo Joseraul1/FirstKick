@@ -58,8 +58,6 @@ body {
 
 /* Contenedor principal */
 .container {
-    display: flex;
-    flex-direction: column;
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
@@ -68,58 +66,44 @@ body {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilos para la sección de subir archivos */
-.upload-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Secciones */
+.section {
     margin-bottom: 20px;
 }
 
-.upload-section input[type="file"] {
-    display: none; /* Ocultar el input file */
+h2 {
+    color: #32CD32;
 }
 
-.upload-label {
-    padding: 10px 20px;
-    background-color: #32CD32;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    text-align: center;
-}
-
-.upload-label:hover {
-    background-color: #2eb82e;
-}
-
-/* Estilos para el botón de abrir cámara */
-.camera-button {
-    background-color: #32CD32;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    margin-bottom: 20px;
-}
-
-.camera-button:hover {
-    background-color: #2eb82e;
-}
-
-/* Estilos para el video */
-.video-preview-container {
+.skill-container {
     display: flex;
-    justify-content: center;
-    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 10px; /* Espacio entre habilidades */
 }
 
-.video-preview {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+.skill {
+    background-color: #ecf3fd;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #32CD32;
+    font-weight: bold;
+}
+
+/* Portfolio Items */
+.portfolio-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.portfolio-item a {
+    color: #32CD32;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.portfolio-item a:hover {
+    text-decoration: underline;
 }

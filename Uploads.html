@@ -3,21 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Uploads.css">
     <title>Uploads</title>
+    <link rel="stylesheet" href="Uploads.css">
 </head>
 <body>
-    <h1>Subir Archivos y Abrir Cámara</h1>
+    <!-- Barra de navegación -->
+    <div class="navbar">
+        <h1>FirstKick</h1>
+        <div class="navbar-links">
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar...">
+            </div>
+            <a href="./Web.html">Home</a>
+            <a href="./Discover.html">Discover</a>
+            <a href="./Uploads.html">Uploads</a>
+            <a href="./Profile.html">Profile</a>
+            <a href="./Settings.html">Settings</a>
+        </div>
+    </div>
 
-    <!-- Subir archivos -->
-    <input type="file" id="file-upload" accept="image/*,video/*,application/pdf" multiple>
-    <p>Selecciona archivos para subir</p>
+    <div class="container">
+        <h1>Subir Archivos y Abrir Cámara</h1>
 
-    <!-- Botón para abrir cámara -->
-    <button id="open-camera">Abrir Cámara</button>
+        <!-- Sección de subir archivos -->
+        <div class="upload-section">
+            <label for="file-upload" class="upload-label">Seleccionar Archivos</label>
+            <input type="file" id="file-upload" accept="image/*,video/*,application/pdf" multiple>
+            <p>Selecciona archivos para subir</p>
+        </div>
 
-    <!-- Elemento de video para la cámara -->
-    <video id="video" autoplay></video>
+        <!-- Botón para abrir cámara -->
+        <button class="camera-button" id="open-camera">Abrir Cámara</button>
+
+        <!-- Elemento de video para la cámara -->
+        <div class="video-preview-container">
+            <video id="video" class="video-preview" autoplay></video>
+        </div>
+    </div>
 
     <script>
         // Acceder a la cámara
@@ -31,13 +53,5 @@
             }
         });
     </script>
-     <!-- Barra de navegacion -->
-     <div class="navbar2">
-        <a href="./Web.html">Home</a>
-        <a href="./Discover.html">Discover</a>
-        <a href="./Uploads.html">Uploads</a>
-        <a href="./Profile.html">Profile</a>
-        <a href="./Settings.html">Settings</a>
-        </div>
 </body>
 </html>

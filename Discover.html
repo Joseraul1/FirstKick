@@ -3,82 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore - First Kick</title>
     <link rel="stylesheet" href="Explore.css">
-    <title>Explore</title>
 </head>
 <body>
-<div class="container">
-    <!-- Search Section -->
-    <div class="search-bar">
-        <input type="text" placeholder="Search posts...">
-        <button>Search</button>
-    </div>
-
-    <!-- Filters Section -->
-    <div class="filters">
-        <label>Filter by category:</label>
-        <select>
-            <option value="All">All</option>
-            <option value="Players">Players</option>
-            <option value="Schools">Schools</option>
-            <option value="Teams">Teams</option>
-            <option value="Brands">Brands</option>
-        </select>
-        <select>
-            <option value="all">All</option>
-            <option value="Football">Football</option>
-            <option value="Basketball">Basketball</option>
-            <option value="Baseball">Baseball</option>
-            <option value="Others">Others</option>
-        </select>
-    </div>
-
-    <!-- Top Post of the Week Section -->
-    <div class="top-post">
-        <h3>Top Post of the day</h3>
-        <p>¡Esta es una publicación de ejemplo en la red social!</p>
-        <div class="post-actions">
-            <span>👍 Me gusta</span>
-            <span>💬 Comentar</span>
-            <span>↪️ Compartir</span>
+    <!-- Barra de navegación -->
+    <div class="navbar">
+        <h1>FirstKick</h1>
+        <input type="text" placeholder="Buscar...">
+        <div class="navbar-links">
+            <a href="./Web.html">Home</a>
+            <a href="./Discover.html">Discover</a>
+            <a href="./Uploads.html">Uploads</a>
+            <a href="./Profile.html">Profile</a>
+            <a href="./Settings.html">Settings</a>
         </div>
     </div>
 
-    <!-- List of Posts -->
-    <div class="post">
-        <h3>User Name</h3>
-        <p>¡Esta es una publicación de ejemplo en la red social!</p>
-        <div class="post-actions">
-            <span>👍 Me gusta</span>
-            <span>💬 Comentar</span>
-            <span>↪️ Compartir</span>
+    <!-- Contenedor principal -->
+    <div class="container">
+        <!-- Barra lateral de filtros -->
+        <div class="sidebar">
+            <h2>Filtros de Búsqueda</h2>
+            <label for="category">Categoría:</label>
+            <select id="category">
+                <option value="all">Todas</option>
+                <option value="Players">Jugadores</option>
+                <option value="Schools">Escuelas</option>
+                <option value="Teams">Equipos</option>
+                <option value="Brands">Marcas</option>
+            </select>
+            <label for="sport">Deporte:</label>
+            <select id="sport">
+                <option value="all">Todos</option>
+                <option value="Football">Fútbol</option>
+                <option value="Basketball">Baloncesto</option>
+                <option value="Baseball">Béisbol</option>
+                <option value="Others">Otros</option>
+            </select>
+            <button>Aplicar Filtros</button>
+        </div>
+
+        <!-- Sección principal de contenido -->
+        <div class="feed">
+            <div class="top-post">
+                <h3>Top Post del Día</h3>
+                <p>¡Esta es una publicación destacada en la plataforma!</p>
+                <div class="post-actions">
+                    <span>👍 Me gusta</span>
+                    <span>💬 Comentar</span>
+                    <span>↪️ Compartir</span>
+                </div>
+            </div>
+
+            <!-- Lista de publicaciones -->
+            <div class="post">
+                <h3>User Name</h3>
+                <p>¡Esta es una publicación de ejemplo en la red social!</p>
+                <div class="post-actions">
+                    <span>👍 Me gusta</span>
+                    <span>💬 Comentar</span>
+                    <span>↪️ Compartir</span>
+                </div>
+            </div>
+            <div class="post">
+                <h3>User Name</h3>
+                <p>¡Esta es otra publicación de ejemplo en la red social!</p>
+                <div class="post-actions">
+                    <span>👍 Me gusta</span>
+                    <span>💬 Comentar</span>
+                    <span>↪️ Compartir</span>
+                </div>
+            </div>
+            <!-- Agrega más publicaciones aquí según sea necesario -->
         </div>
     </div>
-    <div class="post">
-        <h3>User Name</h3>
-        <p>¡Esta es una publicación de ejemplo en la red social!</p>
-        <div class="post-actions">
-            <span>👍 Me gusta</span>
-            <span>💬 Comentar</span>
-            <span>↪️ Compartir</span>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <h2>Conéctate y Crece</h2>
+            <p>¡Únete a nuestra comunidad de profesionales y lleva tu carrera al siguiente nivel!</p>
+            <div class="footer-links">
+                <a href="./About.html">Sobre Nosotros</a>
+                <a href="./Careers.html">Oportunidades de Empleo</a>
+                <a href="./Help.html">Ayuda y Soporte</a>
+                <a href="./Privacy.html">Política de Privacidad</a>
+                <a href="./Terms.html">Términos de Uso</a>
+            </div>
         </div>
-    </div>
-    <div class="post">
-        <h3>User Name</h3>
-        <p>¡Esta es una publicación de ejemplo en la red social!</p>
-        <div class="post-actions">
-            <span>👍 Me gusta</span>
-            <span>💬 Comentar</span>
-            <span>↪️ Compartir</span>
+        <div class="footer-bottom">
+            <p>&copy; 2024 FirstKick. Todos los derechos reservados.</p>
         </div>
-    </div>
-    <!-- Barra de navegacion -->
-    <div class="navbar2">
-        <a href="./Web.html">Home</a>
-        <a href="./Discover.html">Discover</a>
-        <a href="./Uploads.html">Uploads</a>
-        <a href="./Profile.html">Profile</a>
-        <a href="./Settings.html">Settings</a>
-        </div>
+    </footer>
 </body>
 </html>
