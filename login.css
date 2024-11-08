@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal de la página de login */
+.login-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #32CD32;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #555;
+    margin: 20px 0;
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 14px;
+    color: #555;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #d0e1f9;
+    background-color: #ecf3fd;
+    font-size: 14px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus {
+    background-color: #f0f8ff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button[type="submit"] {
+    background-color: #32CD32;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #2eb82e;
+}
+
+/* Estilo para la separación entre los formularios */
+h2 {
+    font-size: 18px;
+    color: #777;
+    margin: 20px 0;
+    text-align: center;
+}
+
