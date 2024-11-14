@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="Explore.css">
 </head>
 <body>
+
     <!-- Barra de navegación -->
     <div class="navbar">
         <h1>FirstKick</h1>
@@ -44,8 +45,24 @@
             <button>Aplicar Filtros</button>
         </div>
 
-        <!-- Sección principal de contenido -->
-        <div class="feed">
+        <!-- Contenedor de publicaciones -->
+        <div class="posts">
+            <!-- Formulario para agregar publicación con opción de imágenes -->
+            <div class="new-post">
+                <h3>Crea una nueva publicación</h3>
+                <textarea id="postContent" placeholder="Escribe tu publicación aquí..." rows="4" required></textarea>
+                <div class="file-upload">
+                    <input type="file" id="uploadImage" accept="image/*" />
+                    <label for="uploadImage">Sube una imagen</label>
+                </div>
+                <div class="file-upload">
+                    <input type="file" id="uploadVideo" accept="video/*" />
+                    <label for="uploadVideo">Sube un video</label>
+                </div>
+                <button id="submitPost">Publicar</button>
+            </div>
+
+            <!-- Sección del Top Post del Día -->
             <div class="top-post">
                 <h3>Top Post del Día</h3>
                 <p>¡Esta es una publicación destacada en la plataforma!</p>
@@ -57,25 +74,9 @@
             </div>
 
             <!-- Lista de publicaciones -->
-            <div class="post">
-                <h3>User Name</h3>
-                <p>¡Esta es una publicación de ejemplo en la red social!</p>
-                <div class="post-actions">
-                    <span>👍 Me gusta</span>
-                    <span>💬 Comentar</span>
-                    <span>↪️ Compartir</span>
-                </div>
+            <div class="feed">
+                <!-- Las publicaciones se agregarán aquí dinámicamente con JavaScript -->
             </div>
-            <div class="post">
-                <h3>User Name</h3>
-                <p>¡Esta es otra publicación de ejemplo en la red social!</p>
-                <div class="post-actions">
-                    <span>👍 Me gusta</span>
-                    <span>💬 Comentar</span>
-                    <span>↪️ Compartir</span>
-                </div>
-            </div>
-            <!-- Agrega más publicaciones aquí según sea necesario -->
         </div>
     </div>
 
@@ -96,5 +97,8 @@
             <p>&copy; 2024 FirstKick. Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <!-- Incluir el script para manejar las publicaciones -->
+    <script src="public.js"></script> <!-- Este es el archivo cliente que debe estar en el navegador -->
 </body>
 </html>
