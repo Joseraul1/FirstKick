@@ -8,7 +8,7 @@ body {
 /* Barra de navegación */
 .navbar {
     background-color: #ffffff;
-    color: #32CD32;
+    color: #6A0DAD;
     padding: 10px 20px;
     display: flex;
     align-items: center;
@@ -18,7 +18,7 @@ body {
 .navbar h1 {
     margin: 0;
     font-size: 24px;
-    color: #32CD32;
+    color: #6A0DAD;
     margin-right: auto;
 }
 
@@ -29,7 +29,7 @@ body {
 }
 
 .navbar-links a {
-    color: #32CD32;
+    color: #6A0DAD;
     text-decoration: none;
     font-weight: bold;
     padding: 8px;
@@ -72,7 +72,7 @@ body {
 }
 
 h2 {
-    color: #32CD32;
+    color: #6A0DAD;
 }
 
 .skill-container {
@@ -85,7 +85,7 @@ h2 {
     background-color: #ecf3fd;
     padding: 10px 15px;
     border-radius: 5px;
-    color: #32CD32;
+    color: #6A0DAD;
     font-weight: bold;
 }
 
@@ -99,7 +99,7 @@ h2 {
 }
 
 .portfolio-item a {
-    color: #32CD32;
+    color: #6A0DAD;
     text-decoration: none;
     font-weight: bold;
 }

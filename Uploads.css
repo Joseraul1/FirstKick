@@ -8,7 +8,7 @@ body {
 /* Barra de navegación */
 .navbar {
     background-color: #ffffff;
-    color: #32CD32;
+    color: #6A0DAD;
     padding: 10px 20px;
     display: flex;
     align-items: center;
@@ -18,7 +18,7 @@ body {
 .navbar h1 {
     margin: 0;
     font-size: 24px;
-    color: #32CD32;
+    color: #6A0DAD;
     margin-right: auto;
 }
 
@@ -29,7 +29,7 @@ body {
 }
 
 .navbar-links a {
-    color: #32CD32;
+    color: #6A0DAD;
     text-decoration: none;
     font-weight: bold;
     padding: 8px;
@@ -38,22 +38,23 @@ body {
 }
 
 .navbar-links a:hover {
-    background-color: #ecf3fd;
+    background-color: #f3e5f5;
 }
 
+/* Barra de búsqueda */
 .navbar input[type="text"] {
     padding: 5px;
     border-radius: 15px;
     border: 1px solid #d0e1f9;
     width: 200px;
-    background-color: #ecf3fd;
+    background-color: #ecf3fd; /* Azul claro */
     margin-right: 20px;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .navbar input[type="text"]:focus {
     background-color: #f0f8ff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Azul */
 }
 
 /* Contenedor principal */
@@ -82,7 +83,7 @@ body {
 
 .upload-label {
     padding: 10px 20px;
-    background-color: #32CD32;
+    background-color: #6A0DAD;
     color: white;
     border-radius: 5px;
     cursor: pointer;
@@ -91,12 +92,12 @@ body {
 }
 
 .upload-label:hover {
-    background-color: #2eb82e;
+    background-color: #8A2BE2;
 }
 
 /* Estilos para el botón de abrir cámara */
 .camera-button {
-    background-color: #32CD32;
+    background-color: #6A0DAD;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -107,7 +108,7 @@ body {
 }
 
 .camera-button:hover {
-    background-color: #2eb82e;
+    background-color: #8A2BE2;
 }
 
 /* Estilos para el video */

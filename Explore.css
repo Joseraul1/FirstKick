@@ -8,7 +8,7 @@ body {
 /* Barra de navegación */
 .navbar {
     background-color: #ffffff;
-    color: #32CD32;
+    color: #6A0DAD;
     padding: 10px 20px;
     display: flex;
     align-items: center;
@@ -18,7 +18,7 @@ body {
 .navbar h1 {
     margin: 0;
     font-size: 24px;
-    color: #32CD32;
+    color: #6A0DAD;
     margin-right: auto;
 }
 
@@ -44,7 +44,7 @@ body {
 }
 
 .navbar-links a {
-    color: #32CD32;
+    color: #6A0DAD;
     text-decoration: none;
     font-weight: bold;
     padding: 8px;
@@ -53,20 +53,20 @@ body {
 }
 
 .navbar-links a:hover {
-    background-color: #ecf3fd;
+    background-color: #f3e5f5;
 }
 
 /* Contenedor principal */
 .container {
-    display: flex; /* Cambia a flexbox para alinear los elementos en columnas */
+    display: flex;
     max-width: 1200px;
     margin: 20px auto;
-    gap: 20px; /* Espacio entre los elementos */
+    gap: 20px;
 }
 
 /* Estilos para la barra lateral de filtros */
 .sidebar {
-    width: 25%; /* Ajusta el ancho según tus necesidades */
+    width: 25%;
     padding: 20px;
     background-color: white;
     margin-right: 20px;
@@ -76,57 +76,57 @@ body {
 
 .sidebar h2 {
     margin-top: 0;
-    color: #32CD32; /* Color para el título */
+    color: #6A0DAD;
 }
 
 .sidebar label {
-    display: block; /* Hace que las etiquetas estén en una nueva línea */
+    display: block;
     margin-top: 15px;
     font-weight: bold;
-    color: #555; /* Color de las etiquetas */
+    color: #555;
 }
 
 .sidebar select {
-    width: 100%; /* Hace que el select ocupe todo el ancho */
+    width: 100%;
     padding: 8px;
     border-radius: 5px;
     border: 1px solid #d0e1f9;
     background-color: #f9f9f9;
-    margin-top: 5px; /* Espaciado entre la etiqueta y el select */
+    margin-top: 5px;
     cursor: pointer;
 }
 
 .sidebar button {
-    background-color: #32CD32;
+    background-color: #6A0DAD;
     color: white;
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 20px; /* Espaciado arriba del botón */
+    margin-top: 20px;
     transition: background-color 0.3s;
 }
 
 .sidebar button:hover {
-    background-color: #2eb82e; /* Color al pasar el ratón */
+    background-color: #8A2BE2;
 }
 
 /* Contenedor de publicaciones */
 .posts {
-    flex: 1; /* Permite que el contenedor de publicaciones ocupe el espacio restante */
+    flex: 1;
 }
 
 /* Sección de la mejor publicación */
 .top-post {
-    background-color: #e0f7e0;
+    background-color: #f3e5f5;
     padding: 15px;
-    margin-bottom: 20px; /* Añadir margen inferior para separación */
+    margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .top-post h3 {
-    color: #32CD32;
+    color: #6A0DAD;
     font-size: 18px;
 }
 
@@ -172,7 +172,7 @@ body {
 }
 
 .footer h2 {
-    color: #32CD32;
+    color: #6A0DAD;
     font-size: 22px;
     margin-bottom: 10px;
 }
@@ -191,14 +191,14 @@ body {
 }
 
 .footer-links a {
-    color: #32CD32;
+    color: #6A0DAD;
     text-decoration: none;
     font-size: 14px;
     transition: color 0.3s;
 }
 
 .footer-links a:hover {
-    color: #2eb82e;
+    color: #8A2BE2;
 }
 
 .footer-bottom {
@@ -206,6 +206,7 @@ body {
     color: #aaa;
     margin-top: 15px;
 }
+
 /* Estilos para el formulario de publicación */
 .new-post {
     margin-bottom: 20px;
@@ -221,7 +222,7 @@ body {
 }
 
 .new-post button {
-    background-color: #32CD32;
+    background-color: #6A0DAD;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -231,31 +232,10 @@ body {
 }
 
 .new-post button:hover {
-    background-color: #2eb82e;
+    background-color: #8A2BE2;
 }
 
-/* Estilos para las publicaciones */
-.post {
-    background-color: white;
-    padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease;
-}
-
-.post:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-.post h3 {
-    margin: 0 0 10px 0;
-}
-
-.post p {
-    color: #555;
-}
-/* Estilos para las imágenes y videos en las publicaciones */
+/* Estilos para imágenes y videos en publicaciones */
 .post-image {
     max-width: 100%;
     height: auto;
@@ -266,17 +246,4 @@ body {
     max-width: 100%;
     height: auto;
     margin-top: 10px;
-}
-
-.post {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 10px 0;
-    background-color: #f9f9f9;
-}
-
-textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
 }
