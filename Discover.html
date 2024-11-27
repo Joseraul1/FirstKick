@@ -3,73 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explore - First Kick</title>
+    <title data-i18n="title">Explore - First Kick</title>
     <link rel="stylesheet" href="Explore.css">
 </head>
 <body>
 
     <!-- Barra de navegación -->
     <div class="navbar">
-        <h1>FirstKick</h1>
-        <input type="text" placeholder="Buscar...">
+        <h1 data-i18n="site-name">FirstKick</h1>
+        <input type="text" placeholder="Buscar..." data-i18n="search-placeholder">
         <div class="navbar-links">
-            <a href="./Web.html">Home</a>
-            <a href="./Discover.html">Discover</a>
-            <a href="./Uploads.html">Uploads</a>
-            <a href="./Profile.html">Profile</a>
-            <a href="./Settings.html">Settings</a>
+            <a href="./Web.html" data-i18n="home-link">Home</a>
+            <a href="./Discover.html" data-i18n="discover-link">Discover</a>
+            <a href="./Uploads.html" data-i18n="uploads-link">Uploads</a>
+            <a href="./Profile.html" data-i18n="profile-link">Profile</a>
+            <a href="./Settings.html" data-i18n="settings-link">Settings</a>
         </div>
+        <button class="lang-btn" onclick="changeLanguage()" data-i18n="change-lang-btn">
+            <img src="flag-icon-us.png" alt="English" class="flag-icon"> 
+            <span data-i18n="change-lang-text">Change Language</span>
+        </button>
     </div>
 
     <!-- Contenedor principal -->
     <div class="container">
         <!-- Barra lateral de filtros -->
         <div class="sidebar">
-            <h2>Filtros de Búsqueda</h2>
-            <label for="category">Categoría:</label>
+            <h2 data-i18n="filter-title">Filtros de Búsqueda</h2>
+            <label for="category" data-i18n="category-label">Categoría:</label>
             <select id="category">
-                <option value="all">Todas</option>
-                <option value="Players">Jugadores</option>
-                <option value="Schools">Escuelas</option>
-                <option value="Teams">Equipos</option>
-                <option value="Brands">Marcas</option>
+                <option value="all" data-i18n="all">Todas</option>
+                <option value="Players" data-i18n="players">Jugadores</option>
+                <option value="Schools" data-i18n="schools">Escuelas</option>
+                <option value="Teams" data-i18n="teams">Equipos</option>
+                <option value="Brands" data-i18n="brands">Marcas</option>
             </select>
-            <label for="sport">Deporte:</label>
+            <label for="sport" data-i18n="sport-label">Deporte:</label>
             <select id="sport">
-                <option value="all">Todos</option>
-                <option value="Football">Fútbol</option>
-                <option value="Basketball">Baloncesto</option>
-                <option value="Baseball">Béisbol</option>
-                <option value="Others">Otros</option>
+                <option value="all" data-i18n="all-sports">Todos</option>
+                <option value="Football" data-i18n="football">Fútbol</option>
+                <option value="Basketball" data-i18n="basketball">Baloncesto</option>
+                <option value="Baseball" data-i18n="baseball">Béisbol</option>
+                <option value="Others" data-i18n="others">Otros</option>
             </select>
-            <button>Aplicar Filtros</button>
+            <button data-i18n="apply-filters-btn">Aplicar Filtros</button>
         </div>
 
         <!-- Contenedor de publicaciones -->
         <div class="posts">
             <!-- Formulario para agregar publicación con opción de imágenes -->
             <div class="new-post">
-                <h3>Crea una nueva publicación</h3>
+                <h3 data-i18n="create-post">Crea una nueva publicación</h3>
                 <textarea id="postContent" placeholder="Escribe tu publicación aquí..." rows="4" required></textarea>
                 <div class="file-upload">
                     <input type="file" id="uploadImage" accept="image/*" />
-                    <label for="uploadImage">Sube una imagen</label>
+                    <label for="uploadImage" data-i18n="upload-image-label">Sube una imagen</label>
                 </div>
                 <div class="file-upload">
                     <input type="file" id="uploadVideo" accept="video/*" />
-                    <label for="uploadVideo">Sube un video</label>
+                    <label for="uploadVideo" data-i18n="upload-video-label">Sube un video</label>
                 </div>
-                <button id="submitPost">Publicar</button>
+                <button id="submitPost" data-i18n="submit-post-btn">Publicar</button>
             </div>
 
             <!-- Sección del Top Post del Día -->
             <div class="top-post">
-                <h3>Top Post del Día</h3>
-                <p>¡Esta es una publicación destacada en la plataforma!</p>
+                <h3 data-i18n="top-post-title">Top Post del Día</h3>
+                <p data-i18n="top-post-text">¡Esta es una publicación destacada en la plataforma!</p>
                 <div class="post-actions">
-                    <span>👍 Me gusta</span>
-                    <span>💬 Comentar</span>
-                    <span>↪️ Compartir</span>
+                    <span data-i18n="like-btn">👍 Me gusta</span>
+                    <span data-i18n="comment-btn">💬 Comentar</span>
+                    <span data-i18n="share-btn">↪️ Compartir</span>
                 </div>
             </div>
 
@@ -83,22 +87,24 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <h2>Conéctate y Crece</h2>
-            <p>¡Únete a nuestra comunidad de profesionales y lleva tu carrera al siguiente nivel!</p>
+            <h2 data-i18n="connect-title">Conéctate y Crece</h2>
+            <p data-i18n="footer-text">¡Únete a nuestra comunidad de profesionales y lleva tu carrera al siguiente nivel!</p>
             <div class="footer-links">
-                <a href="./About.html">Sobre Nosotros</a>
-                <a href="./Careers.html">Oportunidades de Empleo</a>
-                <a href="./Help.html">Ayuda y Soporte</a>
-                <a href="./Privacy.html">Política de Privacidad</a>
-                <a href="./Terms.html">Términos de Uso</a>
+                <a href="./About.html" data-i18n="about-link">Sobre Nosotros</a>
+                <a href="./Careers.html" data-i18n="careers-link">Oportunidades de Empleo</a>
+                <a href="./Help.html" data-i18n="help-link">Ayuda y Soporte</a>
+                <a href="./Privacy.html" data-i18n="privacy-link">Política de Privacidad</a>
+                <a href="./Terms.html" data-i18n="terms-link">Términos de Uso</a>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 FirstKick. Todos los derechos reservados.</p>
+            <p data-i18n="footer-copyright">&copy; 2024 FirstKick. Todos los derechos reservados.</p>
         </div>
     </footer>
 
     <!-- Incluir el script para manejar las publicaciones -->
-    <script src="public.js"></script> <!-- Este es el archivo cliente que debe estar en el navegador -->
+    <script src="public.js"></script>
+    <!-- Incluir el script para manejar el cambio de idioma -->
+    <script src="languageSwitcher.js"></script>
 </body>
 </html>

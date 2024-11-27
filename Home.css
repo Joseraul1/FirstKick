@@ -2,13 +2,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
+    background-color: #f1f1f1; /* Fondo gris claro */
 }
 
 /* Barra de navegación */
 .navbar {
-    background-color: #ffffff;
-    color: #6A0DAD;
+    background-color: #ffffff; /* Barra blanca */
+    color: #007bff; /* Azul deportivo */
     padding: 10px 20px;
     display: flex;
     align-items: center;
@@ -18,7 +18,7 @@ body {
 .navbar h1 {
     margin: 0;
     font-size: 24px;
-    color: #6A0DAD;
+    color: #007bff; /* Azul deportivo */
     margin-right: auto;
 }
 
@@ -34,7 +34,7 @@ body {
 
 .navbar input[type="text"]:focus {
     background-color: #f0f8ff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    box-shadow: 0 0 5px #007bff80;
 }
 
 /* Estilos para los enlaces de navegación */
@@ -44,7 +44,7 @@ body {
 }
 
 .navbar-links a {
-    color: #6A0DAD;
+    color: #007bff; /* Azul deportivo */
     text-decoration: none;
     font-weight: bold;
     padding: 8px;
@@ -53,7 +53,7 @@ body {
 }
 
 .navbar-links a:hover {
-    background-color: #f3e5f5;
+    background-color: #e9f2fe;
 }
 
 /* Contenedor principal */
@@ -77,7 +77,7 @@ body {
 }
 
 .sidebar button {
-    background-color: #6A0DAD;
+    background-color: #28a745; /* Verde energía */
     color: white;
     padding: 8px 12px;
     border: none;
@@ -87,7 +87,7 @@ body {
 }
 
 .sidebar button:hover {
-    background-color: #8A2BE2;
+    background-color: #218838; /* Verde oscuro */
 }
 
 /* Sección de publicaciones */
@@ -120,7 +120,7 @@ body {
     margin-top: 10px;
     display: flex;
     justify-content: space-around;
-    color: #4267B2;
+    color: #007bff; /* Azul deportivo */
 }
 
 .post-actions span:hover {
@@ -144,7 +144,7 @@ body {
 }
 
 .footer h2 {
-    color: #6A0DAD;
+    color: #007bff; /* Azul deportivo */
     font-size: 22px;
     margin-bottom: 10px;
 }
@@ -163,7 +163,7 @@ body {
 }
 
 .footer-links a {
-    color: #6A0DAD;
+    color: #007bff; /* Azul deportivo */
     text-decoration: none;
     font-size: 14px;
     transition: color 0.3s;
@@ -177,4 +177,42 @@ body {
     font-size: 13px;
     color: #aaa;
     margin-top: 15px;
+}
+
+/* Estilo básico del botón */
+.lang-btn {
+    background-color: #ff6f00; /* Naranja vibrante */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.lang-btn:hover {
+    background-color: #e65c00; /* Naranja oscuro */
+    transform: scale(1.1); /* Le da un pequeño efecto de agrandamiento */
+}
+
+.lang-btn .flag-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.lang-btn span {
+    font-size: 14px;
+}
+
+/* Si el idioma cambia, cambia la bandera */
+.lang-btn[data-lang="es"] .flag-icon {
+    content: url('flag-icon-es.png');
+}
+
+.lang-btn[data-lang="en"] .flag-icon {
+    content: url('flag-icon-us.png');
 }

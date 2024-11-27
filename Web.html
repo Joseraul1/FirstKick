@@ -3,93 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First Kick</title>
+    <title data-i18n="title">First Kick</title>
     <link rel="stylesheet" href="Home.css">
-  
-
 </head>
 <body>
+    <script src="languageSwitcher.js"></script>
     <script src="app.js"></script>
     <!-- Barra de navegación -->
     <div class="navbar">
-        <h1>FirstKick</h1>
-        <input type="text" placeholder="Buscar...">
+        <h1 data-i18n="site-name">FirstKick</h1>
+        <input type="text" placeholder="Buscar..." data-i18n="search-placeholder">
         <div class="navbar-links">
-            <a href="./Web.html">Home</a>
-            <a href="./Discover.html">Discover</a>
-            <a href="./Uploads.html">Uploads</a>
-            <a href="./Profile.html">Profile</a>
-            <a href="./Settings.html">Settings</a>
+            <a href="./Web.html" data-i18n="home-link">Home</a>
+            <a href="./Discover.html" data-i18n="discover-link">Discover</a>
+            <a href="./Uploads.html" data-i18n="uploads-link">Uploads</a>
+            <a href="./Profile.html" data-i18n="profile-link">Profile</a>
+            <a href="./Settings.html" data-i18n="settings-link">Settings</a>
         </div>
+        <button class="lang-btn" onclick="changeLanguage()" data-i18n="change-lang-btn">
+            <img src="flag-icon-us.png" alt="English" class="flag-icon"> 
+            <span data-i18n="change-lang-text">Change Language</span>
+        </button>
+        
+
     </div>
 
     <!-- Contenedor principal -->
     <div class="container">
         <!-- Barra lateral de perfil -->
         <div class="sidebar">
-            <h2>My Profile</h2>
-            <p>User Name</p>
-            <button onclick="window.location.href='login.html';">Edit Profile</button>
+            <h2 data-i18n="my-profile">My Profile</h2>
+            <p data-i18n="user-name">User Name</p>
+            <button onclick="window.location.href='login.html';" data-i18n="edit-profile-btn">Edit Profile</button>
         </div>
 
         <!-- Sección de publicaciones -->
         <div class="feed">
             <!-- Aquí irían las publicaciones de los usuarios -->
             <div class="post">
-                <h3>User Name</h3>
-                <p>¡Esta es una publicación de ejemplo en la red social!</p>
+                <h3 data-i18n="post-user-name">User Name</h3>
+                <p data-i18n="post-text">¡Esta es una publicación de ejemplo en la red social!</p>
                 <div class="post-actions">
-                    <span>👍 Me gusta</span>
-                    <span>💬 Comentar</span>
-                    <span>↪️ Compartir</span>
+                    <span data-i18n="like-btn">👍 Me gusta</span>
+                    <span data-i18n="comment-btn">💬 Comentar</span>
+                    <span data-i18n="share-btn">↪️ Compartir</span>
                 </div>
             </div>
-            <div class="post">
-                <h3>User Name</h3>
-                <p>¡Esta es una publicación de ejemplo en la red social!</p>
-                <div class="post-actions">
-                    <span>👍 Me gusta</span>
-                    <span>💬 Comentar</span>
-                    <span>↪️ Compartir</span>
-                </div>
-            </div>
-            <div class="post">
-                <h3>User Name</h3>
-                <p>¡Esta es una publicación de ejemplo en la red social!</p>
-                <div class="post-actions">
-                    <span>👍 Me gusta</span>
-                    <span>💬 Comentar</span>
-                    <span>↪️ Compartir</span>
-                </div>
-            </div>
-            <div class="post">
-                <h3>User Name</h3>
-                <p>¡Esta es una publicación de ejemplo en la red social!</p>
-                <div class="post-actions">
-                    <span>👍 Me gusta</span>
-                    <span>💬 Comentar</span>
-                    <span>↪️ Compartir</span>
-                </div>
-            </div>
+            <!-- Más publicaciones -->
         </div>
     </div>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <h2>Conéctate y Crece</h2>
-            <p>¡Únete a nuestra comunidad de profesionales y lleva tu carrera al siguiente nivel!</p>
+            <h2 data-i18n="connect-title">Conéctate y Crece</h2>
+            <p data-i18n="footer-text">¡Únete a nuestra comunidad de profesionales y lleva tu carrera al siguiente nivel!</p>
             <div class="footer-links">
-                <a href="./About.html">Sobre Nosotros</a>
-                <a href="./Careers.html">Oportunidades de Empleo</a>
-                <a href="./Help.html">Ayuda y Soporte</a>
-                <a href="./Privacy.html">Política de Privacidad</a>
-                <a href="./Terms.html">Términos de Uso</a>
+                <a href="./About.html" data-i18n="about-link">Sobre Nosotros</a>
+                <a href="./Careers.html" data-i18n="careers-link">Oportunidades de Empleo</a>
+                <a href="./Help.html" data-i18n="help-link">Ayuda y Soporte</a>
+                <a href="./Privacy.html" data-i18n="privacy-link">Política de Privacidad</a>
+                <a href="./Terms.html" data-i18n="terms-link">Términos de Uso</a>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 FirstKick. Todos los derechos reservados.</p>
+            <p data-i18n="footer-copyright">&copy; 2024 FirstKick. Todos los derechos reservados.</p>
         </div>
     </footer>
-
 </body>
 </html>

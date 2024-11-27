@@ -8,7 +8,7 @@ body {
 /* Barra de navegación */
 .navbar {
     background-color: #ffffff;
-    color: #6A0DAD;
+    color: #007bff; /* Azul deportivo para texto */
     padding: 10px 20px;
     display: flex;
     align-items: center;
@@ -18,7 +18,7 @@ body {
 .navbar h1 {
     margin: 0;
     font-size: 24px;
-    color: #6A0DAD;
+    color: #007bff; /* Azul deportivo para el título */
     margin-right: auto;
 }
 
@@ -29,7 +29,7 @@ body {
 }
 
 .navbar-links a {
-    color: #6A0DAD;
+    color: #007bff; /* Azul deportivo para enlaces */
     text-decoration: none;
     font-weight: bold;
     padding: 8px;
@@ -83,7 +83,7 @@ body {
 
 .upload-label {
     padding: 10px 20px;
-    background-color: #6A0DAD;
+    background-color: #28a745; /* Verde energía para botones importantes */
     color: white;
     border-radius: 5px;
     cursor: pointer;
@@ -92,12 +92,12 @@ body {
 }
 
 .upload-label:hover {
-    background-color: #8A2BE2;
+    background-color: #218838; /* Verde más oscuro en hover */
 }
 
 /* Estilos para el botón de abrir cámara */
 .camera-button {
-    background-color: #6A0DAD;
+    background-color: #28a745; /* Verde energía */
     color: white;
     padding: 10px 20px;
     border: none;
@@ -108,7 +108,7 @@ body {
 }
 
 .camera-button:hover {
-    background-color: #8A2BE2;
+    background-color: #218838; /* Verde más oscuro en hover */
 }
 
 /* Estilos para el video */
@@ -123,4 +123,42 @@ body {
     height: auto;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo básico del botón de cambio de idioma */
+.lang-btn {
+    background-color: #ff6f00; /* Naranja vibrante */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.lang-btn:hover {
+    background-color: #e65c00; /* Naranja más oscuro en hover */
+    transform: scale(1.1); /* Le da un pequeño efecto de agrandamiento */
+}
+
+.lang-btn .flag-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.lang-btn span {
+    font-size: 14px;
+}
+
+/* Si el idioma cambia, cambia la bandera */
+.lang-btn[data-lang="es"] .flag-icon {
+    content: url('flag-icon-es.png');
+}
+
+.lang-btn[data-lang="en"] .flag-icon {
+    content: url('flag-icon-us.png');
 }
