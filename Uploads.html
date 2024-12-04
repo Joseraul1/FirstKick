@@ -3,37 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uploads</title>
+    <title data-i18n="title">Subir Archivos - First Kick</title>
     <link rel="stylesheet" href="Uploads.css">
 </head>
 <body>
+
     <!-- Barra de navegación -->
     <div class="navbar">
-        <h1>FirstKick</h1>
+        <h1 data-i18n="site-name">FirstKick</h1>
+        <input type="text" placeholder="Buscar..." data-i18n="search-placeholder">
         <div class="navbar-links">
-            <div class="search-bar">
-                <input type="text" placeholder="Buscar...">
-            </div>
-            <a href="./Web.html">Home</a>
-            <a href="./Discover.html">Discover</a>
-            <a href="./Uploads.html">Uploads</a>
-            <a href="./Profile.html">Profile</a>
-            <a href="./Settings.html">Settings</a>
+            <a href="./Web.html" data-i18n="home-link">Home</a>
+            <a href="./Discover.html" data-i18n="discover-link">Discover</a>
+            <a href="./Uploads.html" data-i18n="uploads-link">Uploads</a>
+            <a href="./Profile.html" data-i18n="profile-link">Profile</a>
+            <a href="./Settings.html" data-i18n="settings-link">Settings</a>
         </div>
+        <button class="lang-btn" onclick="changeLanguage()" data-i18n="change-lang-btn">
+            <img src="flag-icon-us.png" alt="English" class="flag-icon"> 
+            <span data-i18n="change-lang-text">Change Language</span>
+        </button>
     </div>
 
+    <!-- Contenedor principal -->
     <div class="container">
-        <h1>Subir Archivos y Abrir Cámara</h1>
+        <h1 data-i18n="upload-title">Subir Archivos y Abrir Cámara</h1>
 
         <!-- Sección de subir archivos -->
         <div class="upload-section">
-            <label for="file-upload" class="upload-label">Seleccionar Archivos</label>
+            <label for="file-upload" class="upload-label" data-i18n="select-files">Seleccionar Archivos</label>
             <input type="file" id="file-upload" accept="image/*,video/*,application/pdf" multiple>
-            <p>Selecciona archivos para subir</p>
+            <p data-i18n="file-description">Selecciona archivos para subir</p>
         </div>
 
         <!-- Botón para abrir cámara -->
-        <button class="camera-button" id="open-camera">Abrir Cámara</button>
+        <button class="camera-button" id="open-camera" data-i18n="open-camera">Abrir Cámara</button>
 
         <!-- Elemento de video para la cámara -->
         <div class="video-preview-container">
@@ -53,5 +57,9 @@
             }
         });
     </script>
+    
+    <!-- Incluir el script para cambiar el idioma -->
+    <script src="languageSwitcher.js"></script>
+
 </body>
 </html>

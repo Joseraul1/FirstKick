@@ -51,7 +51,56 @@ const translations = {
         "upload-video-label": "Upload a Video",
         "submit-post-btn": "Post",
         "top-post-title": "Top Post of the Day",
-        "top-post-text": "This is a featured post on the platform!"
+        "top-post-text": "This is a featured post on the platform!",
+        "upload-title": "Upload Files and Open Camera",
+        "select-files": "Select Files",
+        "file-description": "Select files to upload",
+        "open-camera": "Open Camera",
+        "title": "Your Name - Profile",
+        "site-name": "FirstKick",
+        "search-placeholder": "Search...",
+        "home-link": "Home",
+        "discover-link": "Discover",
+        "uploads-link": "Uploads",
+        "profile-link": "Profile",
+        "settings-link": "Settings",
+        "change-lang-btn": "Change Language",
+        "change-lang-text": "Change Language",
+        "your-name": "Your Name",
+        "profession": "Web Developer | Designer | Creative Thinker",
+        "about-me": "About Me",
+        "about-me-text": "Hello! I’m a web developer with a passion for creating beautiful, functional websites and applications. I enjoy turning ideas into reality with code and design.",
+        "skills": "Skills",
+        "html": "HTML",
+        "css": "CSS",
+        "javascript": "JavaScript",
+        "react": "React",
+        "nodejs": "Node.js",
+        "python": "Python",
+        "portfolio": "Portfolio",
+        "project1": "Project 1",
+        "project2": "Project 2",
+        "project3": "Project 3",
+        "view-project": "View Project",
+        "contact": "Contact",
+        "email": "Email",
+        "linkedin": "LinkedIn",
+        "github": "GitHub",
+        "site-name": "FirstKick",
+            "search-placeholder": "Search...",
+            "home-link": "Home",
+            "discover-link": "Discover",
+            "uploads-link": "Uploads",
+            "profile-link": "Profile",
+            "settings-link": "Settings",
+            "change-lang-btn": "Change Language",
+            "change-lang-text": "Change Language",
+            "settings-title": "Settings",
+            "privacy": "Privacy",
+            "change-password": "Change Password",
+            "notifications": "Notifications",
+            "language": "Language",
+            "logout-btn": "Logout"
     },
     es: {
         "login-title": "Iniciar sesión",
@@ -104,7 +153,56 @@ const translations = {
         "upload-video-label": "Subir un video",
         "submit-post-btn": "Publicar",
         "top-post-title": "Publicación destacada del día",
-        "top-post-text": "¡Esta es una publicación destacada en la plataforma!"
+        "top-post-text": "¡Esta es una publicación destacada en la plataforma!",
+        "upload-title": "Subir Archivos y Abrir Cámara",
+        "select-files": "Seleccionar Archivos",
+        "file-description": "Selecciona archivos para subir",
+        "open-camera": "Abrir Cámara",
+        "title": "Tu Nombre - Perfil",
+        "site-name": "FirstKick",
+        "search-placeholder": "Buscar...",
+        "home-link": "Inicio",
+        "discover-link": "Descubrir",
+        "uploads-link": "Subir",
+        "profile-link": "Perfil",
+        "settings-link": "Configuración",
+        "change-lang-btn": "Cambiar idioma",
+        "change-lang-text": "Cambiar idioma",
+        "your-name": "Tu Nombre",
+        "profession": "Desarrollador Web | Diseñador | Pensador Creativo",
+        "about-me": "Sobre mí",
+        "about-me-text": "¡Hola! Soy un desarrollador web con pasión por crear sitios y aplicaciones hermosas y funcionales. Disfruto convertir ideas en realidad con código y diseño.",
+        "skills": "Habilidades",
+        "html": "HTML",
+        "css": "CSS",
+        "javascript": "JavaScript",
+        "react": "React",
+        "nodejs": "Node.js",
+        "python": "Python",
+        "portfolio": "Portafolio",
+        "project1": "Proyecto 1",
+        "project2": "Proyecto 2",
+        "project3": "Proyecto 3",
+        "view-project": "Ver Proyecto",
+        "contact": "Contacto",
+        "email": "Correo electrónico",
+        "linkedin": "LinkedIn",
+        "github": "GitHub",
+        "site-name": "FirstKick",
+        "search-placeholder": "Buscar...",
+        "home-link": "Inicio",
+        "discover-link": "Descubrir",
+        "uploads-link": "Subidas",
+        "profile-link": "Perfil",
+        "settings-link": "Configuración",
+        "change-lang-btn": "Cambiar Idioma",
+        "change-lang-text": "Cambiar Idioma",
+        "settings-title": "Configuración",
+        "privacy": "Privacidad",
+        "change-password": "Cambiar Contraseña",
+        "notifications": "Notificaciones",
+        "language": "Idioma",
+        "logout-btn": "Cerrar Sesión"
     }
 };
 
@@ -141,3 +239,24 @@ document.addEventListener("DOMContentLoaded", () => {
         changeLangButton.addEventListener("click", changeLanguage);
     }
 });
+// Funciones para manejar las acciones de los botones
+function privacySettings() {
+    alert('Redirigiendo a Configuración de Privacidad...');
+}
+
+function changePassword() {
+    alert('Redirigiendo a Cambiar Contraseña...');
+}
+
+function notificationSettings() {
+    alert('Redirigiendo a Configuración de Notificaciones...');
+}
+
+function languageSettings() {
+    alert('Redirigiendo a Configuración de Idioma...');
+}
+
+function logout() {
+    alert('Cerrando sesión...');
+    // Aquí agregarías el código para cerrar sesión, como limpiar cookies o tokens.
+}

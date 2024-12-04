@@ -3,72 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Settings</title>
+    <title data-i18n="title">FirstKick</title>
     <link rel="stylesheet" href="Settings.css"> <!-- Cambia el nombre del archivo CSS si es necesario -->
+    <script src="languageSwitcher.js" defer></script> <!-- Archivo JS para el cambio de idioma -->
 </head>
 <body>
     <!-- Barra de navegación -->
     <div class="navbar">
-        <h1>FirstKick</h1>
+        <h1 data-i18n="site-name">FirstKick</h1>
         <div class="navbar-links">
             <div class="search-bar">
-                <input type="text" placeholder="Buscar...">
+                <input type="text" placeholder="Buscar..." data-i18n="search-placeholder">
             </div>
-            <a href="./Web.html">Home</a>
-            <a href="./Discover.html">Discover</a>
-            <a href="./Uploads.html">Uploads</a>
-            <a href="./Profile.html">Profile</a>
-            <a href="./Settings.html">Settings</a>
+            <a href="./Web.html" data-i18n="home-link">Home</a>
+            <a href="./Discover.html" data-i18n="discover-link">Discover</a>
+            <a href="./Uploads.html" data-i18n="uploads-link">Uploads</a>
+            <a href="./Profile.html" data-i18n="profile-link">Profile</a>
+            <a href="./Settings.html" data-i18n="settings-link">Settings</a>
         </div>
+        <!-- Botón para cambiar el idioma -->
+        <button class="lang-btn" onclick="changeLanguage()" data-i18n="change-lang-btn">
+            <span data-i18n="change-lang-text">Cambiar Idioma</span>
+        </button>
     </div>
 
     <div class="settings-container">
-        <h1>Configuración</h1>
+        <h1 data-i18n="settings-title">Configuración</h1>
         
         <div class="setting-option" onclick="privacySettings()">
-            <span>Privacidad</span>
+            <span data-i18n="privacy">Privacidad</span>
             <span>&#x25B6;</span>
         </div>
         
         <div class="setting-option" onclick="changePassword()">
-            <span>Cambiar Contraseña</span>
+            <span data-i18n="change-password">Cambiar Contraseña</span>
             <span>&#x25B6;</span>
         </div>
         
         <div class="setting-option" onclick="notificationSettings()">
-            <span>Notificaciones</span>
+            <span data-i18n="notifications">Notificaciones</span>
             <span>&#x25B6;</span>
         </div>
         
         <div class="setting-option" onclick="languageSettings()">
-            <span>Idioma</span>
+            <span data-i18n="language">Idioma</span>
             <span>&#x25B6;</span>
         </div>
         
-        <button class="logout-btn" onclick="logout()">Cerrar Sesión</button>
+        <button class="logout-btn" onclick="logout()" data-i18n="logout-btn">Cerrar Sesión</button>
     </div>
 
-    <script>
-        function privacySettings() {
-            alert('Redirigiendo a Configuración de Privacidad...');
-        }
-
-        function changePassword() {
-            alert('Redirigiendo a Cambiar Contraseña...');
-        }
-
-        function notificationSettings() {
-            alert('Redirigiendo a Configuración de Notificaciones...');
-        }
-
-        function languageSettings() {
-            alert('Redirigiendo a Configuración de Idioma...');
-        }
-
-        function logout() {
-            alert('Cerrando sesión...');
-            // Aquí agregarías el código para cerrar sesión, como limpiar cookies o tokens.
-        }
-    </script>
 </body>
 </html>

@@ -8,7 +8,7 @@ body {
 /* Barra de navegación */
 .navbar {
     background-color: #ffffff;
-    color: #6A0DAD;
+    color: #007bff; /* Azul deportivo */
     padding: 10px 20px;
     display: flex;
     align-items: center;
@@ -18,7 +18,7 @@ body {
 .navbar h1 {
     margin: 0;
     font-size: 24px;
-    color: #6A0DAD;
+    color: #007bff; /* Azul deportivo */
     margin-right: auto;
 }
 
@@ -29,7 +29,7 @@ body {
 }
 
 .navbar-links a {
-    color: #6A0DAD;
+    color: #007bff; /* Azul deportivo */
     text-decoration: none;
     font-weight: bold;
     padding: 8px;
@@ -46,14 +46,14 @@ body {
     border-radius: 15px;
     border: 1px solid #d0e1f9;
     width: 200px;
-    background-color: #ecf3fd;
+    background-color: #ecf3fd; /* Azul claro */
     margin-right: 20px;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .navbar input[type="text"]:focus {
     background-color: #f0f8ff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Azul */
 }
 
 /* Contenedor de configuración */
@@ -103,7 +103,7 @@ body {
     text-align: center;
     font-size: 16px;
     color: #ffffff;
-    background-color: #6A0DAD;
+    background-color: #28a745; /* Verde energía */
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -111,5 +111,42 @@ body {
 }
 
 .logout-btn:hover {
-    background-color: #570a8a;
+    background-color: #218838; /* Verde más oscuro */
+}
+/* Estilo básico del botón */
+.lang-btn {
+    background-color: #ff6f00; /* Naranja vibrante */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.lang-btn:hover {
+    background-color: #e65c00; /* Naranja más brillante al pasar el ratón */
+    transform: scale(1.1); /* Efecto de agrandamiento */
+}
+
+.lang-btn .flag-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.lang-btn span {
+    font-size: 14px;
+}
+
+/* Si el idioma cambia, cambia la bandera */
+.lang-btn[data-lang="es"] .flag-icon {
+    content: url('flag-icon-es.png');
+}
+
+.lang-btn[data-lang="en"] .flag-icon {
+    content: url('flag-icon-us.png');
 }

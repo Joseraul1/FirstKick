@@ -53,7 +53,7 @@ body {
 }
 
 .navbar-links a:hover {
-    background-color: #9333ea; /* Morado deportivo */
+    background-color: #ecf4ff; /* Azul fuerte */
 }
 
 /* Contenedor principal */
@@ -76,7 +76,7 @@ body {
 
 .sidebar h2 {
     margin-top: 0;
-    color: #10b981; /* Verde energético */
+    color: #28a745; /* Verde energético */
 }
 
 .sidebar label {
@@ -97,7 +97,7 @@ body {
 }
 
 .sidebar button {
-    background-color: #EF4444; /* Rojo energético */
+    background-color: #dc3545; /* Rojo fuerte */
     color: white;
     padding: 10px 15px;
     border: none;
@@ -108,7 +108,7 @@ body {
 }
 
 .sidebar button:hover {
-    background-color: #dc2626; /* Rojo más fuerte para hover */
+    background-color: #c0392b; /* Rojo más fuerte para hover */
 }
 
 /* Contenedor de publicaciones */
@@ -118,7 +118,7 @@ body {
 
 /* Sección de la mejor publicación */
 .top-post {
-    background-color: #10b981; /* Morado deportivo */
+    background-color: #28a745; /* Verde energético */
     padding: 15px;
     margin-bottom: 20px;
     border-radius: 8px;
@@ -126,7 +126,7 @@ body {
 }
 
 .top-post h3 {
-    color: #ffffff; /* Blanco para resaltar sobre el fondo morado */
+    color: #ffffff; /* Blanco para resaltar sobre el fondo verde */
     font-size: 18px;
 }
 
@@ -222,7 +222,7 @@ body {
 }
 
 .new-post button {
-    background-color: #EF4444; /* Rojo energético */
+    background-color: #dc3545; /* Rojo fuerte */
     color: white;
     padding: 10px 15px;
     border: none;
@@ -232,7 +232,7 @@ body {
 }
 
 .new-post button:hover {
-    background-color: #dc2626; /* Rojo más fuerte para hover */
+    background-color: #c0392b; /* Rojo más fuerte para hover */
 }
 
 /* Estilos para imágenes y videos en publicaciones */
@@ -250,7 +250,7 @@ body {
 
 /* Estilo básico del botón */
 .lang-btn {
-    background-color: #ff6f00; /* Azul deportivo */
+    background-color: #ff6f00; /* Naranja vibrante */
     color: white;
     border: none;
     border-radius: 25px;
@@ -263,7 +263,7 @@ body {
 }
 
 .lang-btn:hover {
-    background-color: #e65c00; /* Azul más brillante al pasar el ratón */
+    background-color: #e65c00; /* Naranja más brillante al pasar el ratón */
     transform: scale(1.1); /* Efecto de agrandamiento */
 }
 

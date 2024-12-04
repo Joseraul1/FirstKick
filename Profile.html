@@ -3,76 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Profile</title>
+    <title data-i18n="title">Your Name - Profile</title>
     <link rel="stylesheet" href="profile.css"> <!-- Cambia el nombre del archivo CSS si es necesario -->
 </head>
 <body>
 
     <!-- Barra de navegación -->
     <div class="navbar">
-        <h1>FirstKick</h1>
+        <h1 data-i18n="site-name">FirstKick</h1>
         <div class="navbar-links">
             <div class="search-bar">
-                <input type="text" placeholder="Buscar...">
+                <input type="text" placeholder="" data-i18n="search-placeholder">
             </div>
-            <a href="./Web.html">Home</a>
-            <a href="./Discover.html">Discover</a>
-            <a href="./Uploads.html">Uploads</a>
-            <a href="./Profile.html">Profile</a>
-            <a href="./Settings.html">Settings</a>
+            <a href="./Web.html" data-i18n="home-link">Home</a>
+            <a href="./Discover.html" data-i18n="discover-link">Discover</a>
+            <a href="./Uploads.html" data-i18n="uploads-link">Uploads</a>
+            <a href="./Profile.html" data-i18n="profile-link">Profile</a>
+            <a href="./Settings.html" data-i18n="settings-link">Settings</a>
         </div>
+        <button class="lang-btn" onclick="changeLanguage()" data-i18n="change-lang-btn">
+            <img src="flag-icon-us.png" alt="English" class="flag-icon"> 
+            <span data-i18n="change-lang-text">Change Language</span>
+        </button>
     </div>
 
     <div class="container">
         <header>
-            <h1>Your Name</h1>
-            <p>Web Developer | Designer | Creative Thinker</p>
+            <h1 data-i18n="your-name">Your Name</h1>
+            <p data-i18n="profession">Web Developer | Designer | Creative Thinker</p>
         </header>
 
-        <!-- Introduction Section -->
+        <!-- Sección de introducción -->
         <section class="intro section">
-            <h2>About Me</h2>
-            <p>Hello! I’m a web developer with a passion for creating beautiful, functional websites and applications. I enjoy turning ideas into reality with code and design.</p>
+            <h2 data-i18n="about-me">About Me</h2>
+            <p data-i18n="about-me-text">Hello! I’m a web developer with a passion for creating beautiful, functional websites and applications. I enjoy turning ideas into reality with code and design.</p>
         </section>
 
-        <!-- Skills Section -->
+        <!-- Sección de habilidades -->
         <section class="skills section">
-            <h2>Skills</h2>
+            <h2 data-i18n="skills">Skills</h2>
             <div class="skill-container">
-                <div class="skill">HTML</div>
-                <div class="skill">CSS</div>
-                <div class="skill">JavaScript</div>
-                <div class="skill">React</div>
-                <div class="skill">Node.js</div>
-                <div class="skill">Python</div>
+                <div class="skill" data-i18n="html">HTML</div>
+                <div class="skill" data-i18n="css">CSS</div>
+                <div class="skill" data-i18n="javascript">JavaScript</div>
+                <div class="skill" data-i18n="react">React</div>
+                <div class="skill" data-i18n="nodejs">Node.js</div>
+                <div class="skill" data-i18n="python">Python</div>
             </div>
         </section>
 
-        <!-- Portfolio Section -->
+        <!-- Sección de portafolio -->
         <section class="portfolio section">
-            <h2>Portfolio</h2>
+            <h2 data-i18n="portfolio">Portfolio</h2>
             <div class="portfolio-item">
-                <p>Project 1</p>
-                <a href="#">View Project</a>
+                <p data-i18n="project1">Project 1</p>
+                <a href="#" data-i18n="view-project">View Project</a>
             </div>
             <div class="portfolio-item">
-                <p>Project 2</p>
-                <a href="#">View Project</a>
+                <p data-i18n="project2">Project 2</p>
+                <a href="#" data-i18n="view-project">View Project</a>
             </div>
             <div class="portfolio-item">
-                <p>Project 3</p>
-                <a href="#">View Project</a>
+                <p data-i18n="project3">Project 3</p>
+                <a href="#" data-i18n="view-project">View Project</a>
             </div>
         </section>
 
-        <!-- Contact Section -->
+        <!-- Sección de contacto -->
         <section class="contact section">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
-            <p>LinkedIn: <a href="#">linkedin.com/in/yourprofile</a></p>
-            <p>GitHub: <a href="#">github.com/yourusername</a></p>
+            <h2 data-i18n="contact">Contact</h2>
+            <p data-i18n="email">Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+            <p data-i18n="linkedin">LinkedIn: <a href="#">linkedin.com/in/yourprofile</a></p>
+            <p data-i18n="github">GitHub: <a href="#">github.com/yourusername</a></p>
         </section>
     </div>
 
+    <!-- Incluir el script para cambiar el idioma -->
+    <script src="languageSwitcher.js"></script>
 </body>
 </html>
